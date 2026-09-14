@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radar de oportunidades | Ofertas útiles y compras inteligentes</title>
+  <meta name="description" content="Selección independiente de oportunidades, productos útiles y consejos para comprar mejor en Internet.">
+  <meta name="theme-color" content="#172554">
+  <style>
+    :root {
+      --fondo: #f5f7fb;
+      --tarjeta: #ffffff;
+      --texto: #172033;
+      --suave: #637083;
+      --azul: #172554;
+      --azul-claro: #e8efff;
+      --acento: #f59e0b;
+      --borde: #e5eaf2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .contenedor {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #172554, #1e40af);
+      color: white;
+      padding: 24px 0 70px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 58px;
+    }
+
+    .marca {
+      color: white;
+      font-weight: 800;
+      font-size: 1.15rem;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: #dbeafe;
+      text-decoration: none;
+      font-size: .95rem;
+    }
+
+    .hero {
+      max-width: 760px;
+    }
+
+    .etiqueta {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: .82rem;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 6vw, 4.2rem);
+      line-height: 1.05;
+      margin: 0 0 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      color: #dbeafe;
+      font-size: 1.12rem;
+      max-width: 650px;
+      margin: 0;
+    }
+
+    main {
+      padding: 44px 0 70px;
+    }
+
+    .introduccion {
+      max-width: 760px;
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      color: var(--azul);
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+    }
+
+    .introduccion p {
+      color: var(--suave);
+      margin: 0;
+    }
+
+    .rejilla {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .tarjeta {
+      background: var(--tarjeta);
+      border: 1px solid var(--borde);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(23, 37, 84, .06);
+    }
+
+    .icono {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--azul-claro);
+      font-size: 1.45rem;
+      margin-bottom: 18px;
+    }
+
+    .tarjeta h3 {
+      color: var(--azul);
+      margin: 0 0 10px;
+      font-size: 1.18rem;
+    }
+
+    .tarjeta p {
+      color: var(--suave);
+      margin: 0;
+      font-size: .96rem;
+    }
+
+    .bloque {
+      background: white;
+      border: 1px solid var(--borde);
+      border-radius: 18px;
+      padding: 28px;
+      margin-top: 42px;
+    }
+
+    .lista {
+      display: grid;
+      gap: 14px;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .lista li {
+      padding: 14px 16px;
+      background: #f8fafc;
+      border-left: 4px solid var(--acento);
+      border-radius: 8px;
+      color: #3c485b;
+    }
+
+    .nota {
+      font-size: .9rem;
+      color: var(--suave);
+      margin-top: 22px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      padding: 32px 0;
+      font-size: .9rem;
+    }
+
+    footer p {
+      margin: 7px 0;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        margin-bottom: 42px;
+      }
+
+      nav a {
+        display: none;
+      }
+
+      .rejilla {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding-bottom: 52px;
+      }
+
+      .bloque {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <nav>
+        <a class="marca" href="/">Radar de oportunidades</a>
+        <a href="#criterios">Cómo seleccionamos</a>
+      </nav>
+
+      <div class="hero">
+        <span class="etiqueta">Guía independiente para comprar mejor</span>
+        <h1>Menos ruido.<br>Más oportunidades útiles.</h1>
+        <p>
+          Analizamos ideas, productos y momentos de compra para ayudarte a
+          decidir con más información y menos impulsos.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="introduccion">
+      <h2>Qué encontrarás aquí</h2>
+      <p>
+        Radar de oportunidades nace para reunir recomendaciones prácticas:
+        productos que resuelven problemas cotidianos, ideas para ahorrar y
+        criterios sencillos para saber si una compra merece la pena.
+      </p>
+    </section>
+
+    <section class="rejilla" aria-label="Temas principales">
+      <article class="tarjeta">
+        <div class="icono">🔎</div>
+        <h3>Selecciones razonadas</h3>
+        <p>
+          No nos fijamos únicamente en el precio. También tenemos en cuenta la
+          utilidad, la valoración general, las características y el contexto.
+        </p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="icono">💡</div>
+        <h3>Ideas para el día a día</h3>
+        <p>
+          Descubre soluciones sencillas para organizar mejor tu casa, tu
+          trabajo, tus viajes y tus compras habituales.
+        </p>
+      </article>
+
+      <article class="tarjeta">
+        <div class="icono">🧭</div>
+        <h3>Decisiones con criterio</h3>
+        <p>
+          Te ayudamos a comparar antes de comprar y a distinguir una buena
+          oportunidad de una rebaja poco relevante.
+        </p>
+      </article>
+    </section>
+
+    <section class="bloque" id="criterios">
+      <h2>Nuestros criterios</h2>
+      <p>
+        Cada oportunidad debería aportar algo más que un precio llamativo.
+        Antes de recomendar una opción, procuramos revisar:
+      </p>
+
+      <ul class="lista">
+        <li><strong>Utilidad real:</strong> debe resolver una necesidad concreta o aportar una mejora clara.</li>
+        <li><strong>Relación calidad-precio:</strong> el descuento no es suficiente si el producto no compensa.</li>
+        <li><strong>Información clara:</strong> indicamos lo importante y evitamos exagerar las ventajas.</li>
+        <li><strong>Compra responsable:</strong> comparar y esperar también puede ser la mejor decisión.</li>
+      </ul>
+
+      <p class="nota">
+        Las condiciones, precios, disponibilidad y valoraciones pueden cambiar.
+        Comprueba siempre la información final en la tienda antes de realizar
+        una compra.
+      </p>
+    </section>
+
+    <section class="bloque">
+      <h2>Una recomendación para empezar</h2>
+      <p>
+        Antes de buscar una oferta, anota qué problema quieres resolver, cuánto
+        estás dispuesto a gastar y qué características son imprescindibles.
+        Tener esos tres puntos claros ayuda a evitar compras innecesarias y
+        permite comparar con más calma.
+      </p>
+    </section>
+  <!-- BOT_OPPORTUNITIES_START -->
+<section class="bloque" id="oportunidades">
+  <h2>Oportunidades y guías</h2>
+  <p>Contenido seleccionado para ayudarte a comparar antes de comprar.</p>
+  <ul class="lista">
+    <li><strong>INIU Power Bank 10.000 mAh y 45 W</strong><br><small>Recomendación destacada</small><br>Batería externa compacta con carga rápida. Una opción interesante para viajes, trabajo y uso diario.<br><a href="https://www.amazon.es/INIU-10000mAh-Cargador-Port%C3%A1til-Computadora/dp/B0DQD457KX?dib=eyJ2IjoiMSJ9.lFu8pO4adWZ_Ma_FuqonOLfEqLfzLTNMNuMbA5YB7FqOuQ6CTiC3GnxaQivWkTAapB6wBbniM6hxV8CTjIO1SsORXYA8O4OEGxDI2bfMdAfgiTVT2WGPS6vEyyKkbjjCId9gy7_qrqnIHfCaa-7q1eNUMpLW_Un2482JJA-PrqsH_nzOE3gQ_BDln_15RdvakUULySs3knyu7Q3s7Xg8oA.9Iwd2ibcjC6znalKvK7_kG_mMRmm3rqQmbaHpq7Zo48&amp;dib_tag=se&amp;keywords=INIU%2B10000mAh%2BPower%2BBank%2C%2BUltra%2BMini%2B45W&amp;qid=1789323031&amp;sr=8-1-spons&amp;aref=xlNh9bvxWS&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9waG9uZV9zZWFyY2hfYXRm&amp;th=1&amp;linkCode=ll2&amp;tag=radaroportu01-21&amp;linkId=3e6a4e6be606118fdae06851fd0a0e7c&amp;ref_=as_li_ss_tl" rel="nofollow sponsored">Ver recomendación</a></li>
+<li><strong>tomtoc Organizador de Cables y Accesorios de Viaje</strong><br><small>Accesorio útil para viajar</small><br>Una opción práctica para reunir cargadores, cables y pequeños accesorios tecnológicos en un solo lugar.<br><a href="https://www.amazon.es/dp/B0CMQ3L1QD?th=1&amp;linkCode=ll2&amp;tag=radaroportu01-21&amp;linkId=55dce5483b5f75948cb40d93b6cc92dc&amp;ref_=as_li_ss_tl" rel="nofollow sponsored">Ver recomendación</a></li>
+<li><strong>One Fire Flexo LED portátil y plegable</strong><br><small>Para trabajar o estudiar</small><br>Una lámpara compacta para lectura, escritorio y mesita de noche, con varios niveles de brillo y un formato fácil de transportar.<br><a href="https://www.amazon.es/dp/B09L78T81M?th=1&amp;linkCode=ll2&amp;tag=radaroportu01-21&amp;linkId=b4d64b305f5adc28675804845d2d2a86&amp;ref_=as_li_ss_tl" rel="nofollow sponsored">Ver recomendación</a></li>
+  </ul>
+  <p class="nota">Los enlaces de compra se añadirán únicamente cuando la información esté revisada.</p>
+</section>
+<!-- BOT_OPPORTUNITIES_END -->
+</main>
+
+  <footer>
+    <div class="contenedor">
+      <p><strong>Radar de oportunidades</strong></p>
+      <p>
+        Contenido editorial independiente sobre compras útiles y decisiones
+        informadas.
+      </p>
+      <p>
+        En calidad de Afiliado de Amazon, obtengo ingresos por las compras
+        adscritas que cumplen los requisitos aplicables.
+      </p>
+      <p>© 2026 Radar de oportunidades</p>
+    </div>
+  </footer>
+</body>
+</html>
