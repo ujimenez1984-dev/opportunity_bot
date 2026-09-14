@@ -50,7 +50,7 @@ if inicio in texto and fin in texto:
     texto = antes + seccion_completa + despues
 else:
     texto = texto.replace(
-        "  </main>",
+        "</main>",
         f"    {seccion_completa.replace(chr(10), chr(10) + '    ')}\n  </main>",
         1
     )
